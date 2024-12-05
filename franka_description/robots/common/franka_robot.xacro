@@ -28,7 +28,7 @@
         <xacro:if value="${parent == 'world'}">
           <link name="${parent}" />
         </xacro:if>
-        <joint name="${parent}_joint" type="fixed">
+        <joint name="${parent}_franka_joint" type="fixed">
           <origin xyz="${xyz}" rpy="${rpy}" />
           <parent link="${parent}" />
           <child  link="${arm_id}_link0" />
